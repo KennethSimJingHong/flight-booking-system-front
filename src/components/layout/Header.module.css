@@ -1,0 +1,55 @@
+.header{
+    width:100%;
+    height:5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+    margin-left:50px;
+    width:40%;
+}
+
+.header h1 span{
+    font-size: 13px;
+    font-weight: 500;
+    margin-left:10px;
+    color: rgb(177, 177, 177);
+}
+
+.header nav{
+    width:50%;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+}
+
+.header ul li{
+    margin:0 30px;
+    font-weight: 600;
+}
+
+.header a{
+    text-decoration: none;
+    color:black;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: #F2BC58;
+}
+
+.header a.active::after{
+    content: '';
+    display: block;
+    width:5px;
+    height:5px;
+    background-color: #F2BC58;
+    position: relative;
+    margin: auto;
+    border-radius: 100%;
+    margin-top:5px;
+}
